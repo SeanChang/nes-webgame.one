@@ -163,6 +163,7 @@ function getIpAddress() {
       }
     }
   }
+  return "127.0.0.1";
 }
 
 // src/server.config.ts
@@ -427,6 +428,22 @@ roms.get("/suggestions", async (req, res) => {
     sendEmpty(res, "keyword");
     return;
   }
+});
+roms.delete("/delete", async (req, res) => {
+  const id = req.query.id;
+  if (!checkQuery(id)) {
+    sendEmpty(res, "id");
+    return;
+  }
+  await dispatchResponse(async () => {
+    const rom = await getRomById(id);
+    if (rom) {
+      rom.destroy();
+      res.send({ code: 200 });
+    } else {
+      res.send({ code: 400 });
+    }
+  }, res);
 });
 var rom_router_default = roms;
 

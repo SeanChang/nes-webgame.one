@@ -18,7 +18,7 @@ const isGettingRomInfoZip = computed(() => romInfoZip.length === 0)
 
 // 页面title
 const title = computed(() => {
-    return '在线红白机游戏 - ' + (romInfoZip.length > 0 ? romInfo.value.title : 'FC模拟器')
+    return '一网万游在线红白机游戏-' + (romInfoZip.length > 0 ? romInfo.value.title + '|WebGame.One' : '一网万游FC模拟器|WebGame.One')
 })
 useHead(() => ({ title }))
 

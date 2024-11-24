@@ -58,8 +58,8 @@ export default defineConfig({
             registerType: 'autoUpdate',
             includeAssets: ['icons/safari-pinned-tab.svg'],
             manifest: {
-                name: '在线红白机游戏',
-                short_name: '在线NES游戏',
+                name: '一网万游在线红白机游戏|WebGame.One',
+                short_name: '一网万游在线NES游戏|WebGame.One',
                 theme_color: '#ffffff',
                 icons: [
                     {

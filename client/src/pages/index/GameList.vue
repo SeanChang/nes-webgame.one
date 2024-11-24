@@ -20,7 +20,7 @@ const isSearching = computed(() => isNotNull(query.keyword))
 const isGettingCategorys = computed(() => categorys.length === 0)
 const isGettingGameList = computed(() => gameList.length === 0)
 
-const title = computed(() => '在线红白机游戏 - ' + (isSearching.value ? `搜索：${query.keyword}` : '游戏列表'))
+const title = computed(() => '一网万游在线红白机游戏-' + (isSearching.value ? `搜索：${query.keyword}` + '|WebGame.One' : '游戏列表|WebGame.One'))
 useHead({ title })
 
 if (isSearching.value) {

@@ -34,22 +34,13 @@ if (now > 2023) {
         class="[&>p]:m-y-5"
       >
         <p text="1.2rem bold">
-          在线红白机游戏
+          <a href="https://WebGame.one" target="_blank">一网万游在线红白机游戏|WebGame.One</a>
         </p>
         <p>
           Copyright © {{ date }} <a
-            href="https://github.com/taiyuuki"
+            href="https://WebGame.one"
             target="_blank"
-          >Taiyuuki</a>
-        </p>
-        <p>
-          项目地址：<a
-            href="https://github.com/taiyuuki/nes-web"
-            target="_blank"
-          >Github</a>
-        </p>
-        <p>
-          LICENSE: MIT
+          >WebGame.One</a>
         </p>
       </div>
     </div>
