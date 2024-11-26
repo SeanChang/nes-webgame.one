@@ -176,7 +176,7 @@ var hostIp = getIpAddress();
 var getDataBasePath = () => (0, import_path.join)(__dirname, dbPath);
 var getRomPath = () => (0, import_path.join)(__dirname, romPath);
 var port = 8848;
-var baseURL = `http://localhost:${port}`;
+var baseURL = `https://api.webgame.one`;
 if (process.env.NODE_ENV === "development") {
   baseURL = `http://${hostIp}:${port}`;
 }
